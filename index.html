@@ -462,7 +462,7 @@
     mainCtx.save();
     mainCtx.translate(state.panOffset.x, state.panOffset.y);
     mainCtx.scale(state.zoom, state.zoom);
-    currentPage().strokes.forEach(drawStroke);
+    currentPage().strokes.forEach(stroke => drawStroke(stroke));
     mainCtx.restore();
   }
 
